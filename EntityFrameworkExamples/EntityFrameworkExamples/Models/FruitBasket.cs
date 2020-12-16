@@ -12,6 +12,5 @@
         public int ID { get; set; }
 
         public string Pear { get; set; } = string.Empty;
-        public string? Zucchini { get; set; } = string.Empty;
     }
 }

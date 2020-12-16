@@ -14,8 +14,7 @@ namespace EntityFrameworkExamples.Test
             await db.FruitBaskets.AddAsync(new FruitBasket
             {
                 Banana = DateTime.UtcNow.Ticks.ToString(),
-                Pear = DateTime.UtcNow.Ticks.ToString(),
-                Zucchini = DateTime.UtcNow.Ticks.ToString()
+                Pear = DateTime.UtcNow.Ticks.ToString()
             });
             await db.SaveChangesAsync();
         }
