@@ -12,6 +12,9 @@
         public DbSet<FruitBasket> FruitBaskets =>
             Set<FruitBasket>();
 
+        public DbSet<BasketMaker> BasketMakers =>
+            Set<BasketMaker>();
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
             optionsBuilder.UseSqlServer(new SqlConnection { ConnectionString = ConnectionString });
     }
